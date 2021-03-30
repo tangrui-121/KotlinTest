@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.SparseArray
 import com.person.kotlintest.R
-import com.person.kotlintest.base.Action
-import com.person.kotlintest.base.Node
+import com.person.kotlintest.homedialog.dialogbase.Action
+import com.person.kotlintest.homedialog.dialogbase.Node
 import com.person.kotlintest.log
 import com.person.kotlintest.singleClick
 import com.person.kotlintest.toast

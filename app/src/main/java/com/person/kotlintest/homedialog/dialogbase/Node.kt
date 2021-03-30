@@ -1,4 +1,4 @@
-package com.person.kotlintest.base
+package com.person.kotlintest.homedialog.dialogbase
 
 interface Node {
     fun getNodeId(): Int

@@ -1,7 +1,7 @@
 package com.person.kotlintest.homedialog
 
-import com.person.kotlintest.base.Action
-import com.person.kotlintest.base.Node
+import com.person.kotlintest.homedialog.dialogbase.Action
+import com.person.kotlintest.homedialog.dialogbase.Node
 
 class DialogActionNode : Node {
 
