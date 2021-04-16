@@ -3,6 +3,7 @@ package com.person.kotlintest.homedialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.SparseArray
+import com.person.ddd.LogUtils
 import com.person.kotlintest.R
 import com.person.kotlintest.homedialog.dialogbase.Action
 import com.person.kotlintest.homedialog.dialogbase.Node
@@ -83,7 +84,7 @@ class HomeDialogActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_dialog)
-
+LogUtils.showLog("asdasd")
         test_dialog.singleClick {
             DialogActionFlow.Companion.Builder().addNode(dialog1).addNode(dialog2).addNode(dialog3)
                 .addNode(dialog4).setFlowCallback(object : DialogActionFlow.FlowCallback {
