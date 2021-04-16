@@ -22,7 +22,6 @@ class HomeDialogActivity : AppCompatActivity() {
         val Dialog_Key2 = 20
         val Dialog_Key3 = 30
         val Dialog_Key4 = 40
-        
     }
 
     val dialog1: DialogActionNode by lazy {
