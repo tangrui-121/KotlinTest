@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import com.person.kotlintest.download.UpdateActivity
 import com.person.kotlintest.homedialog.HomeDialogActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -40,6 +41,9 @@ class MainActivity : AppCompatActivity() {
     private fun clickEvents() {
         tv_homedialog.singleClick {
             startActivity(Intent(this, HomeDialogActivity::class.java))
+        }
+        tv_update.singleClick {
+            startActivity(Intent(this, UpdateActivity::class.java))
         }
     }
 }

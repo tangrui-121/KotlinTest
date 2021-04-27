@@ -10,4 +10,6 @@
 
     <!--dialog相关-->
     <color name="common_eval_sdk_colorAccent">#0296fa</color>
+
+    <color name="blue_2a8cff">#2a8cff</color>
 </resources>
