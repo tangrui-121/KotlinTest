@@ -12,4 +12,8 @@ public class JavaForTranslate {
             return mobiles.matches(telRegex);
         }
     }
+
+    private void sss(){
+
+    }
 }

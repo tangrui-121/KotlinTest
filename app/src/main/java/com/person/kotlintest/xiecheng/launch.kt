@@ -9,6 +9,8 @@ import kotlin.concurrent.thread
  * @desc
  */
 fun main1() {
+    val `object`: String = ""
+
     GlobalScope.launch { // 在后台启动一个新的协程并继续
         delay(1000L) // 非阻塞的等待 1 秒钟（默认时间单位是毫秒）
         println("【${Thread.currentThread().name}】World!") // 在延迟后打印输出
@@ -43,13 +45,13 @@ fun main3() = runBlocking { // this: CoroutineScope
     println("Hello,")
 }
 
-suspend fun main4(){
+suspend fun main4() {
     val job = GlobalScope.launch {
         delay(1000L)
         println("world")
     }
     println("hello")
-    job.join()
+    job.join() //不需要显示的sleep多长时间  join会等到子线程结束再finish
 }
 
 fun main5() = runBlocking { // this: CoroutineScope
@@ -80,7 +82,7 @@ fun main6() = runBlocking {
     }
 }
 
-suspend fun main() {
+suspend fun main7() {
     GlobalScope.launch {
         repeat(1000) { i ->
             println("I'm sleeping $i ...")
@@ -88,4 +90,47 @@ suspend fun main() {
         }
     }
     delay(1300L) // 在延迟后退出
+}
+
+fun main8() = runBlocking {
+    val job = launch {
+        repeat(1000) { i ->
+            println("job: I'm sleeping $i ...")
+            delay(500L)
+        }
+    }
+    delay(3300L) // 延迟一段时间
+    println("main: I'm tired of waiting!")
+    job.cancel() // 取消该作业
+    job.join() // 等待作业执行结束
+    println("main: Now I can quit.")
+}
+
+fun main9() = runBlocking{
+    val startTime = System.currentTimeMillis()
+    val job = launch(Dispatchers.Default) {
+        var nextPrintTime = startTime
+        var i = 0
+        while (i < 5) { // 一个执行计算的循环，只是为了占用 CPU
+            // 每秒打印消息两次
+            if (System.currentTimeMillis() >= nextPrintTime) {
+                println("job: I'm sleeping ${i++} ...")
+                nextPrintTime += 500L
+            }
+        }
+    }
+    delay(1300L) // 等待一段时间
+    println("main: I'm tired of waiting!")
+    job.cancelAndJoin() // 取消一个作业并且等待它结束
+    println("main: Now I can quit.")
+}
+
+fun main() {
+    //线程代码
+    println("Start ${Thread.currentThread().name}")
+    Thread {
+        Thread.sleep(1000L)
+        println("Hello World ${Thread.currentThread().name}")
+    }.start()
+    println("End ${Thread.currentThread().name}")
 }
