@@ -2,21 +2,26 @@ package com.person.kotlintest
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.person.kotlintest.download.UpdateActivity
 import com.person.kotlintest.homedialog.HomeDialogActivity
+import com.person.kotlintest.rxandroid.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         layoutInflater.factory2 = object : LayoutInflater.Factory2 {
-            override fun onCreateView(parent: View?, name: String, context: Context, attrs: AttributeSet): View? {
+            override fun onCreateView(
+                parent: View?,
+                name: String,
+                context: Context,
+                attrs: AttributeSet
+            ): View? {
                 "11111111111111".log()
                 return null
             }
@@ -44,6 +49,15 @@ class MainActivity : AppCompatActivity() {
         }
         tv_update.singleClick {
             startActivity(Intent(this, UpdateActivity::class.java))
+        }
+        tv_rxandroid.singleClick {
+            StreamTimer().next(TaskA())
+                .next(TaskB(), 1000)
+                .next(TaskC(), 2000)
+                .start()
+        }
+        tv_rx.singleClick {
+            RX.textRX()
         }
     }
 }

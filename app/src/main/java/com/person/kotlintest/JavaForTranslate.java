@@ -16,4 +16,21 @@ public class JavaForTranslate {
     private void sss(){
 
     }
+
+//    public static void main(String[] args) {
+//        Runnable r = new Runnable() {
+//            @Override
+//            public void run() {
+//                System.out.println("hello, lambda");
+//            }
+//        };
+//        r.run();
+//    }
+
+    public static void main(String[] args) {
+        Runnable r = () -> {
+            System.out.println("hello, lambda");
+        };
+        r.run();
+    }
 }
