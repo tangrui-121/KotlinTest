@@ -1,5 +1,9 @@
 package com.person.kotlintest.rxandroid
 
+import com.person.kotlintest.dsl.KDate.ago
+import com.person.kotlintest.dsl.KDate.days
+import com.person.kotlintest.dsl.KDate.months
+import com.person.kotlintest.dsl.fromNow
 import com.person.kotlintest.log
 import io.reactivex.Observable
 import io.reactivex.ObservableOnSubscribe
@@ -14,6 +18,9 @@ import io.reactivex.disposables.Disposable
 object RX {
 
     fun textRX(){
+        val yesterday = 1.days.ago // 也可以这样写： val yesterday = 1 days ago
+        val twoMonthsLater = 2 months fromNow
+
         val observable: Observable<String> =
             Observable.create(ObservableOnSubscribe<String> { emitter ->
                 emitter.onNext("A")

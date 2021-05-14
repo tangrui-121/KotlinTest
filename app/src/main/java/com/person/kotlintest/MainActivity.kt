@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.person.kotlintest.anko.AnkoActivity
 import com.person.kotlintest.download.UpdateActivity
 import com.person.kotlintest.homedialog.HomeDialogActivity
 import com.person.kotlintest.rxandroid.*
@@ -58,6 +59,9 @@ class MainActivity : AppCompatActivity() {
         }
         tv_rx.singleClick {
             RX.textRX()
+        }
+        tv_anko.singleClick {
+            startActivity(Intent(this,AnkoActivity::class.java))
         }
     }
 }
