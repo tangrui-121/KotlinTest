@@ -16,6 +16,9 @@ import com.person.kotlintest.rxandroid.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    val ttt = 1
+
     override fun onCreate(savedInstanceState: Bundle?) {
         layoutInflater.factory2 = object : LayoutInflater.Factory2 {
             override fun onCreateView(
