@@ -7,6 +7,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.person.kotlintest.anko.AnkoActivity
 import com.person.kotlintest.download.UpdateActivity
@@ -62,6 +63,9 @@ class MainActivity : AppCompatActivity() {
         }
         tv_anko.singleClick {
             startActivity(Intent(this,AnkoActivity::class.java))
+        }
+        eeeee.setLeftClickListener {
+            Toast.makeText(this@MainActivity, "rrrrr", Toast.LENGTH_LONG).show()
         }
     }
 }

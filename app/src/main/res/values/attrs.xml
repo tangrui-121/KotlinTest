@@ -137,4 +137,11 @@
         <attr name="gav_max_count" format="integer" />
     </declare-styleable>
 
+
+    <declare-styleable name="CustomTitleBar">
+        <attr name="left_img_visible" format="boolean" />
+        <attr name="left_img" format="reference|integer" />
+        <attr name="left_textwww" format="string" />
+        <attr name="ed_hint" format="string" />
+    </declare-styleable>
 </resources>

@@ -12,48 +12,66 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:text="责任链下的首页多个弹窗"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="责任链下的首页多个弹窗" />
 
     <TextView
         android:id="@+id/tv_update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:text="更新"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="更新" />
 
     <TextView
         android:id="@+id/tv_rxandroid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:text="RXANDROID"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="RXANDROID" />
 
     <TextView
         android:id="@+id/tv_rx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:text="RX"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="RX" />
 
     <TextView
         android:id="@+id/tv_anko"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:text="ANKO"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="ANKO" />
+
+    <com.person.kotlintest.weight.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_img="@drawable/img_update_with_close"
+        app:left_img_visible="true"
+        app:ed_hint="nihao1"
+        app:left_textwww="你好1"/>
+
+    <com.person.kotlintest.weight.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_img="@mipmap/ic_launcher"
+        app:left_img_visible="false"
+        app:ed_hint="nihao2"
+        app:left_textwww="你好2"/>
+
+    <com.person.kotlintest.weight.CustomTitleBar
+        android:id="@+id/eeeee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_img="@mipmap/ic_launcher"
+        app:left_img_visible="true"
+        app:ed_hint="nihao3"
+        app:left_textwww="你好3"/>
+
+    <com.person.kotlintest.weight.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_img="@mipmap/ic_launcher"
+        app:left_img_visible="false"
+        app:ed_hint="nihao4"
+        app:left_textwww="你好4"/>
 </LinearLayout>
