@@ -14,10 +14,9 @@ import com.person.kotlintest.download.UpdateActivity
 import com.person.kotlintest.homedialog.HomeDialogActivity
 import com.person.kotlintest.rxandroid.*
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
-
-    val ttt = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         layoutInflater.factory2 = object : LayoutInflater.Factory2 {
@@ -37,8 +36,7 @@ class MainActivity : AppCompatActivity() {
                     val iv = ImageView(context)
                     iv.setImageResource(R.mipmap.ic_launcher)
                     return iv
-                }
-                else
+                } else
                     return null
             }
         }
@@ -65,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             RX.textRX()
         }
         tv_anko.singleClick {
-            startActivity(Intent(this,AnkoActivity::class.java))
+            startActivity(Intent(this, AnkoActivity::class.java))
         }
         eeeee.setLeftClickListener {
             Toast.makeText(this@MainActivity, "rrrrr", Toast.LENGTH_LONG).show()
