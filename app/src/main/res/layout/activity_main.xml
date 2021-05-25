@@ -48,6 +48,7 @@
         app:left_img="@drawable/img_update_with_close"
         app:left_img_visible="true"
         app:ed_hint="nihao1"
+        android:visibility="gone"
         app:left_textwww="你好1"/>
 
     <com.person.kotlintest.weight.CustomTitleBar
@@ -56,6 +57,7 @@
         app:left_img="@mipmap/ic_launcher"
         app:left_img_visible="false"
         app:ed_hint="nihao2"
+        android:visibility="gone"
         app:left_textwww="你好2"/>
 
     <com.person.kotlintest.weight.CustomTitleBar
@@ -65,6 +67,7 @@
         app:left_img="@mipmap/ic_launcher"
         app:left_img_visible="true"
         app:ed_hint="nihao3"
+        android:visibility="gone"
         app:left_textwww="你好3"/>
 
     <com.person.kotlintest.weight.CustomTitleBar
@@ -73,5 +76,14 @@
         app:left_img="@mipmap/ic_launcher"
         app:left_img_visible="false"
         app:ed_hint="nihao4"
+        android:visibility="gone"
         app:left_textwww="你好4"/>
+
+    <TextView
+        android:id="@+id/tv_StorageManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="StorageManagerTest" />
+
 </LinearLayout>

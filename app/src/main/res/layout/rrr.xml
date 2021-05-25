@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_2a8cff">
+
+    <RelativeLayout
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:layout_gravity="center">
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/quan_yellow11" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/yuan" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginLeft="18dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/yuan" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/yuan" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/yuan" />
+    </RelativeLayout>
+
+
+</LinearLayout>

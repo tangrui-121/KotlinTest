@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.person.kotlintest.anko.AnkoActivity
 import com.person.kotlintest.download.UpdateActivity
 import com.person.kotlintest.homedialog.HomeDialogActivity
+import com.person.kotlintest.reflex.StorageManagerTest
 import com.person.kotlintest.rxandroid.*
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -67,6 +68,9 @@ class MainActivity : AppCompatActivity() {
         }
         eeeee.setLeftClickListener {
             Toast.makeText(this@MainActivity, "rrrrr", Toast.LENGTH_LONG).show()
+        }
+        tv_StorageManager.singleClick {
+            startActivity(Intent(this, StorageManagerTest::class.java))
         }
     }
 }

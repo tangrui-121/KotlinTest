@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="150dp"
+                android:height="150dp" />
+            <padding
+                android:bottom="5dp"
+                android:left="5dp"
+                android:right="5dp"
+                android:top="5dp" />
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/white" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:bottom="5dp"
+                android:left="5dp"
+                android:right="5dp"
+                android:top="5dp" />
+            <stroke
+                android:width="0.8dp"
+                android:color="@color/white" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:bottom="5dp"
+                android:left="5dp"
+                android:right="5dp"
+                android:top="5dp" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/white" />
+
+            <gradient
+                android:angle="90"
+                android:centerColor="#000000"
+                android:endColor="#ffffff"
+                android:startColor="#000000"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <item
+        android:height="3dp"
+        android:width="3dp"
+        android:top="30dp"
+        android:left="15dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/blue_2a8cff"/>
+        </shape>
+    </item>
+
+    <item
+        android:height="3dp"
+        android:width="3dp"
+        android:top="100dp"
+        android:left="2.5dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/blue_2a8cff"/>
+        </shape>
+    </item>
+</layer-list>
