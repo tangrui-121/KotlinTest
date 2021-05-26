@@ -86,4 +86,17 @@
         android:padding="15dp"
         android:text="StorageManagerTest" />
 
+    <TextView
+        android:id="@+id/tv_timeview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="timeview" />
+
+    <TextView
+        android:id="@+id/tv_socket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="socket" />
 </LinearLayout>

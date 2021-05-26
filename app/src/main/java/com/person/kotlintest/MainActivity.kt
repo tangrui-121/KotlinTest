@@ -14,6 +14,8 @@ import com.person.kotlintest.download.UpdateActivity
 import com.person.kotlintest.homedialog.HomeDialogActivity
 import com.person.kotlintest.reflex.StorageManagerTest
 import com.person.kotlintest.rxandroid.*
+import com.person.kotlintest.socket.SocketActivity
+import com.person.kotlintest.timeview.TimeViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -71,6 +73,12 @@ class MainActivity : AppCompatActivity() {
         }
         tv_StorageManager.singleClick {
             startActivity(Intent(this, StorageManagerTest::class.java))
+        }
+        tv_timeview.singleClick {
+            startActivity(Intent(this, TimeViewActivity::class.java))
+        }
+        tv_socket.singleClick {
+            startActivity(Intent(this, SocketActivity::class.java))
         }
     }
 }

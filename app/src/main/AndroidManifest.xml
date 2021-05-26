@@ -15,8 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinTest">
-        <activity android:name=".reflex.StorageManagerTest"/>
-        <activity android:name=".anko.AnkoActivity"/>
+        <activity android:name=".socket.SocketActivity"></activity>
+        <activity android:name=".timeview.TimeViewActivity" />
+        <activity android:name=".reflex.StorageManagerTest" />
+        <activity android:name=".anko.AnkoActivity" />
         <activity android:name=".download.UpdateActivity" />
         <activity android:name=".homedialog.HomeDialogActivity" />
         <activity android:name=".MainActivity">
