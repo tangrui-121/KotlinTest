@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        "当前进程：${android.os.Process.myPid()}".log()
         clickEvents()
     }
 

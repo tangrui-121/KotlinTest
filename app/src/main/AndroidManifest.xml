@@ -20,7 +20,8 @@
         <activity android:name=".reflex.StorageManagerTest" />
         <activity android:name=".anko.AnkoActivity" />
         <activity android:name=".download.UpdateActivity" />
-        <activity android:name=".homedialog.HomeDialogActivity" />
+        <activity android:name=".homedialog.HomeDialogActivity"
+            android:process=":h5"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

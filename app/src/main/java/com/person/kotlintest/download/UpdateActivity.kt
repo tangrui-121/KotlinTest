@@ -12,7 +12,7 @@ class UpdateActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_update)
-
+        "当前进程：${android.os.Process.myPid()}".log()
         update.singleClick {
             val dialog = UpdateDialog.newInstance()
             dialog.setUpdateDialogCallback(object : UpdateDialog.UpdateDialogCallback {
