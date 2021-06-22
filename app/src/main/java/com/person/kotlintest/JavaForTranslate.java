@@ -2,6 +2,10 @@ package com.person.kotlintest;
 
 import android.text.TextUtils;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 public class JavaForTranslate {
 
     public static boolean isMobileNO(String mobiles) {
@@ -73,10 +77,36 @@ public class JavaForTranslate {
         return (1 - (float) d[n][m] / Math.max(str.length(), target.length())) * 100F;
     }
 
-    public static void main(String[] args) {
-        float aaa = getSameRate("凉山", "凉山彝族自治州");
-        System.out.println(aaa);
+//    public static void main(String[] args) {
+//        float aaa = getSameRate("凉山", "凉山彝族自治州");
+//        System.out.println(aaa);
+//
+//        System.out.println("凉州彝族自治州".contains("凉州"));
+//    }
 
-        System.out.println("凉州彝族自治州".contains("凉州"));
+    static boolean stopRequested = false;
+//    public static void main(String[] args) throws InterruptedException {
+//        Thread backgroundThread = new Thread(() -> {
+//            int i = 0;
+//            while (!stopRequested) {
+//                i++;
+//            }
+//        }) ;
+//        backgroundThread.start();
+//        TimeUnit.MICROSECONDS.sleep(10);
+//        stopRequested = true ;
+//    }
+
+    public static void main(String[] args) {
+        List<String> stringArrayList = new ArrayList<String>();
+        List<Integer> integerArrayList = new ArrayList<Integer>();
+
+        Class classStringArrayList = stringArrayList.getClass();
+        Class classIntegerArrayList = integerArrayList.getClass();
+        System.out.println("classStringArrayList" + classStringArrayList.toString());
+        System.out.println("classIntegerArrayList" + classIntegerArrayList.toString());
+        if(classStringArrayList.equals(classIntegerArrayList)){
+            System.out.println("泛型测试,类型相同");
+        }
     }
 }

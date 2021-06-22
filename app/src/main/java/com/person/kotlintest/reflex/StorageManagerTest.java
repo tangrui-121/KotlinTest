@@ -27,7 +27,7 @@ public class StorageManagerTest extends AppCompatActivity {
 
         try {
             Method method = storageManagerClass.getMethod("getVolumePaths");
-            String[] paths = (String[]) method.invoke(sm, null);
+            String[] paths = (String[]) method.invoke(sm, (Object[]) null);
             for (String aaa : paths){
                 Log.i("www","aaa = " + aaa);
             }

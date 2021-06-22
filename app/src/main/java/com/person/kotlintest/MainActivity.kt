@@ -14,6 +14,7 @@ import com.person.kotlintest.download.UpdateActivity
 import com.person.kotlintest.homedialog.HomeDialogActivity
 import com.person.kotlintest.reflex.StorageManagerTest
 import com.person.kotlintest.rxandroid.*
+import com.person.kotlintest.sign.SignMainActivity
 import com.person.kotlintest.socket.SocketActivity
 import com.person.kotlintest.timeview.TimeViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -45,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         }
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        ed_null.text = null
 
         "当前进程：${android.os.Process.myPid()}".log()
         clickEvents()
@@ -80,6 +82,9 @@ class MainActivity : AppCompatActivity() {
         }
         tv_socket.singleClick {
             startActivity(Intent(this, SocketActivity::class.java))
+        }
+        tv_sign.singleClick {
+            startActivity(Intent(this, SignMainActivity::class.java))
         }
     }
 }
