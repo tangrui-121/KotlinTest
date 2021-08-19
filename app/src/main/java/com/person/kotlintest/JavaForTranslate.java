@@ -108,5 +108,16 @@ public class JavaForTranslate {
         if(classStringArrayList.equals(classIntegerArrayList)){
             System.out.println("泛型测试,类型相同");
         }
+
+        List list = new ArrayList();
+        list.add("mark");
+        list.add("OK");
+        list.add(100);
+
+        for (int i = 0; i < list.size(); i++) {
+            String name = (String) list.get(i); // 1
+            System.out.println("name:" + name);
+        }
+
     }
 }

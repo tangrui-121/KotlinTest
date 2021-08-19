@@ -16,4 +16,5 @@ class App : Application() {
         mContext = applicationContext
         LeakCanary.install(this)
     }
+
 }

@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         ed_null.text = null
-
+        "onCreate".log()
         "当前进程：${android.os.Process.myPid()}".log()
         clickEvents()
     }
@@ -86,5 +86,48 @@ class MainActivity : AppCompatActivity() {
         tv_sign.singleClick {
             startActivity(Intent(this, SignMainActivity::class.java))
         }
+        tv_shown.singleClick {
+            startActivity(Intent(this, EditActivity::class.java))
+        }
+    }
+
+    override fun onWindowFocusChanged(hasFocus: Boolean) {
+        "onWindowFocusChanged".log()
+        super.onWindowFocusChanged(hasFocus)
+    }
+
+    override fun onResume() {
+        "onResume".log()
+        super.onResume()
+    }
+
+    override fun onStart() {
+        "onStart".log()
+        super.onStart()
+    }
+
+    fun getThreadCount(): Int {
+        return getAllThreads().size
+    }
+
+    /**
+     * ps -p `self` -t
+     * See http://man7.org/linux/man-pages/man1/ps.1.html
+     */
+    fun getAllThreads(): MutableList<Thread> {
+        var group = Thread.currentThread().threadGroup
+        var system: ThreadGroup?
+        do {
+            system = group
+            group = group?.parent
+        } while (group != null)
+        val count = system?.activeCount() ?: 0
+        val threads = arrayOfNulls<Thread>(count)
+        system?.enumerate(threads)
+        val list = mutableListOf<Thread>()
+        threads.forEach {
+            it?.let { it1 -> list.add(it1) }
+        }
+        return list
     }
 }

@@ -15,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinTest">
-        <activity android:name=".sign.SignMainActivity"></activity>
+        <activity android:name=".EditActivity"></activity>
+        <activity android:name=".Lambda.LambdaActivity" />
+        <activity android:name=".sign.SignMainActivity" />
         <activity android:name=".socket.SocketActivity" />
         <activity android:name=".timeview.TimeViewActivity" />
         <activity android:name=".reflex.StorageManagerTest" />

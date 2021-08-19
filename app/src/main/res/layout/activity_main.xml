@@ -112,4 +112,11 @@
         android:layout_height="wrap_content"
         android:padding="15dp"
         android:text="sign" />
+
+    <TextView
+        android:id="@+id/tv_shown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="判断shown" />
 </LinearLayout>
