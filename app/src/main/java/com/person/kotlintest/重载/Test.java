@@ -9,7 +9,6 @@ public class Test {
     public static void main(String[] args) {
         Object obj = new Object();
         Object str = new String();
-        
 
         Base base = new Base();
         Base child1 = new Child();
