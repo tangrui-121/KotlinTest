@@ -15,7 +15,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinTest">
-        <activity android:name=".EditActivity"></activity>
+        <activity android:name=".Hilt.HiltActivity"></activity>
+        <activity android:name=".协程.LaunchActivity" />
+        <activity android:name=".recycle.RecycleOpenCloseActivity" />
+        <activity android:name=".hook.HookActivity" />
+        <activity android:name=".warp.WarpActivity" />
+        <activity android:name=".EditActivity" />
         <activity android:name=".Lambda.LambdaActivity" />
         <activity android:name=".sign.SignMainActivity" />
         <activity android:name=".socket.SocketActivity" />

@@ -9,9 +9,12 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.person.kotlintest.Hilt.HiltActivity
 import com.person.kotlintest.anko.AnkoActivity
 import com.person.kotlintest.download.UpdateActivity
 import com.person.kotlintest.homedialog.HomeDialogActivity
+import com.person.kotlintest.hook.HookActivity
+import com.person.kotlintest.recycle.RecycleOpenCloseActivity
 import com.person.kotlintest.reflex.StorageManagerTest
 import com.person.kotlintest.rxandroid.*
 import com.person.kotlintest.sign.SignMainActivity
@@ -88,6 +91,15 @@ class MainActivity : AppCompatActivity() {
         }
         tv_shown.singleClick {
             startActivity(Intent(this, EditActivity::class.java))
+        }
+        tv_hook.singleClick {
+            startActivity(Intent(this, HookActivity::class.java))
+        }
+        tv_oc_rv.singleClick {
+            startActivity(Intent(this, RecycleOpenCloseActivity::class.java))
+        }
+        tv_test_hilt.singleClick {
+            startActivity(Intent(this, HiltActivity::class.java))
         }
     }
 

@@ -98,26 +98,33 @@ public class JavaForTranslate {
 //    }
 
     public static void main(String[] args) {
-        List<String> stringArrayList = new ArrayList<String>();
-        List<Integer> integerArrayList = new ArrayList<Integer>();
+//        List<String> stringArrayList = new ArrayList<String>();
+//        List<Integer> integerArrayList = new ArrayList<Integer>();
+//
+//        Class classStringArrayList = stringArrayList.getClass();
+//        Class classIntegerArrayList = integerArrayList.getClass();
+//        System.out.println("classStringArrayList" + classStringArrayList.toString());
+//        System.out.println("classIntegerArrayList" + classIntegerArrayList.toString());
+//        if(classStringArrayList.equals(classIntegerArrayList)){
+//            System.out.println("泛型测试,类型相同");
+//        }
+//
+//        List list = new ArrayList();
+//        list.add("mark");
+//        list.add("OK");
+//        list.add(100);
+//
+//        for (int i = 0; i < list.size(); i++) {
+//            String name = (String) list.get(i); // 1
+//            System.out.println("name:" + name);
+//        }
 
-        Class classStringArrayList = stringArrayList.getClass();
-        Class classIntegerArrayList = integerArrayList.getClass();
-        System.out.println("classStringArrayList" + classStringArrayList.toString());
-        System.out.println("classIntegerArrayList" + classIntegerArrayList.toString());
-        if(classStringArrayList.equals(classIntegerArrayList)){
-            System.out.println("泛型测试,类型相同");
-        }
-
-        List list = new ArrayList();
-        list.add("mark");
-        list.add("OK");
-        list.add(100);
-
-        for (int i = 0; i < list.size(); i++) {
-            String name = (String) list.get(i); // 1
-            System.out.println("name:" + name);
-        }
-
+        List<String> list = null;
+        System.out.println(list == null);
+        list = new ArrayList<>();
+        System.out.println(list == null);
+        System.out.println(list.isEmpty());
     }
 }
+
+
