@@ -17,8 +17,10 @@ import com.person.kotlintest.hook.HookActivity
 import com.person.kotlintest.recycle.RecycleOpenCloseActivity
 import com.person.kotlintest.reflex.StorageManagerTest
 import com.person.kotlintest.rxandroid.*
+import com.person.kotlintest.showbigpic.ShowBigPicActivity
 import com.person.kotlintest.sign.SignMainActivity
 import com.person.kotlintest.socket.SocketActivity
+import com.person.kotlintest.softkey.SoftKeyActivity
 import com.person.kotlintest.timeview.TimeViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -100,6 +102,12 @@ class MainActivity : AppCompatActivity() {
         }
         tv_test_hilt.singleClick {
             startActivity(Intent(this, HiltActivity::class.java))
+        }
+        tv_softkey.singleClick {
+            startActivity(Intent(this, SoftKeyActivity::class.java))
+        }
+        tv_showbigpic.singleClick {
+            startActivity(Intent(this, ShowBigPicActivity::class.java))
         }
     }
 

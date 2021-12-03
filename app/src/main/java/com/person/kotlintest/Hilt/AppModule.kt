@@ -17,19 +17,19 @@ import javax.inject.Singleton
  * @desc
  */
 
-@Module
-@InstallIn(App::class)
-object AppModule {
-
-    @Singleton
-    @Provides
-    fun provideExecutor(): ExecutorService{
-        return ThreadPoolExecutor(5,39,1,TimeUnit.MINUTES,LinkedBlockingDeque(10000))
-    }
-
-    @Singleton
-    @Provides
-    fun getMyA(): String{
-        return "w s A"
-    }
-}
+//@Module
+//@InstallIn(App::class)
+//object AppModule {
+//
+//    @Singleton
+//    @Provides
+//    fun provideExecutor(): ExecutorService{
+//        return ThreadPoolExecutor(5,39,1,TimeUnit.MINUTES,LinkedBlockingDeque(10000))
+//    }
+//
+//    @Singleton
+//    @Provides
+//    fun getMyA(): String{
+//        return "w s A"
+//    }
+//}

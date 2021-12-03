@@ -7,137 +7,162 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/ed_null"
-        android:hint="weqweq"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:id="@+id/tv_homedialog"
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="责任链下的首页多个弹窗" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_update"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="更新" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_rxandroid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="RXANDROID" />
+            <EditText
+                android:id="@+id/ed_null"
+                android:hint="weqweq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <TextView
-        android:id="@+id/tv_rx"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="RX" />
+            <TextView
+                android:id="@+id/tv_homedialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="责任链下的首页多个弹窗" />
 
-    <TextView
-        android:id="@+id/tv_anko"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="ANKO" />
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="更新" />
 
-    <com.person.kotlintest.weight.CustomTitleBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:left_img="@drawable/img_update_with_close"
-        app:left_img_visible="true"
-        app:ed_hint="nihao1"
-        android:visibility="gone"
-        app:left_textwww="你好1"/>
+            <TextView
+                android:id="@+id/tv_rxandroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="RXANDROID" />
 
-    <com.person.kotlintest.weight.CustomTitleBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:left_img="@mipmap/ic_launcher"
-        app:left_img_visible="false"
-        app:ed_hint="nihao2"
-        android:visibility="gone"
-        app:left_textwww="你好2"/>
+            <TextView
+                android:id="@+id/tv_rx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="RX" />
 
-    <com.person.kotlintest.weight.CustomTitleBar
-        android:id="@+id/eeeee"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:left_img="@mipmap/ic_launcher"
-        app:left_img_visible="true"
-        app:ed_hint="nihao3"
-        android:visibility="gone"
-        app:left_textwww="你好3"/>
+            <TextView
+                android:id="@+id/tv_anko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="ANKO" />
 
-    <com.person.kotlintest.weight.CustomTitleBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:left_img="@mipmap/ic_launcher"
-        app:left_img_visible="false"
-        app:ed_hint="nihao4"
-        android:visibility="gone"
-        app:left_textwww="你好4"/>
+            <com.person.kotlintest.weight.CustomTitleBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:left_img="@drawable/img_update_with_close"
+                app:left_img_visible="true"
+                app:ed_hint="nihao1"
+                android:visibility="gone"
+                app:left_textwww="你好1"/>
 
-    <TextView
-        android:id="@+id/tv_StorageManager"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="StorageManagerTest" />
+            <com.person.kotlintest.weight.CustomTitleBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:left_img="@mipmap/ic_launcher"
+                app:left_img_visible="false"
+                app:ed_hint="nihao2"
+                android:visibility="gone"
+                app:left_textwww="你好2"/>
 
-    <TextView
-        android:id="@+id/tv_timeview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="timeview" />
+            <com.person.kotlintest.weight.CustomTitleBar
+                android:id="@+id/eeeee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:left_img="@mipmap/ic_launcher"
+                app:left_img_visible="true"
+                app:ed_hint="nihao3"
+                android:visibility="gone"
+                app:left_textwww="你好3"/>
 
-    <TextView
-        android:id="@+id/tv_socket"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="socket" />
+            <com.person.kotlintest.weight.CustomTitleBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:left_img="@mipmap/ic_launcher"
+                app:left_img_visible="false"
+                app:ed_hint="nihao4"
+                android:visibility="gone"
+                app:left_textwww="你好4"/>
 
-    <TextView
-        android:id="@+id/tv_sign"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="sign" />
+            <TextView
+                android:id="@+id/tv_StorageManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="StorageManagerTest" />
 
-    <TextView
-        android:id="@+id/tv_shown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="判断shown" />
+            <TextView
+                android:id="@+id/tv_timeview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="timeview" />
 
-    <TextView
-        android:id="@+id/tv_hook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="hook" />
+            <TextView
+                android:id="@+id/tv_socket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="socket" />
 
-    <TextView
-        android:id="@+id/tv_oc_rv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="展开关闭RV" />
+            <TextView
+                android:id="@+id/tv_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="sign" />
 
-    <TextView
-        android:id="@+id/tv_test_hilt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="test Hilt" />
+            <TextView
+                android:id="@+id/tv_shown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="判断shown" />
+
+            <TextView
+                android:id="@+id/tv_hook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="hook" />
+
+            <TextView
+                android:id="@+id/tv_oc_rv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="展开关闭RV" />
+
+            <TextView
+                android:id="@+id/tv_test_hilt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="test Hilt" />
+
+            <TextView
+                android:id="@+id/tv_softkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="顶起软键盘" />
+
+            <TextView
+                android:id="@+id/tv_showbigpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="点击查看大图" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

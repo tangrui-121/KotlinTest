@@ -5,7 +5,7 @@ import android.content.Context
 import com.squareup.leakcanary.LeakCanary
 import dagger.hilt.android.HiltAndroidApp
 
-@HiltAndroidApp
+//@HiltAndroidApp
 class App : Application() {
 
     companion object {

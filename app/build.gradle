@@ -71,7 +71,7 @@ dependencies {
 
     //rv相关
     implementation "androidx.recyclerview:recyclerview:1.1.0"
-    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.6.7'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
 
     //测试github发布依赖
     implementation 'com.github.tangrui-121:DDD:1.1.1'
@@ -109,4 +109,8 @@ dependencies {
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
     //hilt support end
+
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
 }
